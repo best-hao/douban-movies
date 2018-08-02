@@ -1,0 +1,7 @@
+/* pages/lists/lists.wxss */
+@import '../../template/movie-template/movie.wxss';
+.movies-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

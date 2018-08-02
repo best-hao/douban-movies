@@ -1,0 +1,13 @@
+<import src='../movie-template/movie.wxml'/>
+<template name='moviesTemplate'>
+    <view class="categroy-nav" data-total='{{total}}' bindtap='movieNav'>
+      <text class="title">{{title}}</text>
+      <text class="more">更多</text>
+    </view>
+    <view class="scroll-x" scroll-x>
+        <block wx:for='{{subjects}}' wx:item='item' wx:key='key'>
+            <template is="movieTemplate" data='{{...item}}'></template>
+        </block>
+    </view>
+    
+</template>

@@ -1,0 +1,24 @@
+<!--pages/detail/detail.wxml-->
+<!--<video id='video' src='{{movieDetail.trailer_urls[0]}}'></video>-->
+
+<view class='movie-contaller'>
+    <image class='movie-img' src='{{movieDetail.images.large}}'></image>
+    <view>中文片名：{{movieDetail.title}}</view>
+    <view>英文片名：{{movieDetail.aka[0]}}</view>
+    <view>标签：
+        <block  wx:for='{{movieDetail.tags}}' wx:item='item' wx:key='key'>
+            <text class='movie-text'>{{'['+item+']'}}</text>
+        </block>
+    </view>
+    <view>作者：</view>
+    <view class='writer-nav'>
+        <block wx:for='{{movieDetail.writers}}' wx:item='item' wx:key='key'>
+            <view class='movie-view' data-id='{{item.id}}'>
+              <image class='movie-image' src='{{item.avatars.large}}'></image>
+              <text class='movie-title'>{{item.name}}</text>
+            </view>
+        </block>
+    </view>
+    <view>影片简介：</view>
+    <text class='movie-text'>{{movieDetail.summary}}</text>
+</view>

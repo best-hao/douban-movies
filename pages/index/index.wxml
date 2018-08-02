@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<import src='../../template/movies-template/movies.wxml'/>
+<view>
+    <template is='moviesTemplate' data='{{...comingSoon}}'></template>
+    <template is='moviesTemplate' data='{{...inTheaters}}'></template>
+    <template is='moviesTemplate' data='{{...top}}'></template>
+</view>

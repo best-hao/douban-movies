@@ -1,0 +1,18 @@
+@import '../movie-template/movie.wxss';
+
+.categroy-nav{
+  display: flex;
+  flex-direction: row;
+  padding: 15rpx 24rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  justify-content: space-between;
+  white-space:nowrap;
+  background: #fff;
+}
+.scroll-x{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+  background: #fff;
+}

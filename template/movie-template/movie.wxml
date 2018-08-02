@@ -1,0 +1,6 @@
+<template name='movieTemplate'>
+    <view class='movie-view' data-id='{{id}}' bindtap='movieDetail'>
+        <image class='movie-image' src='{{images.large}}'></image>
+        <text class='movie-title'>{{title}}</text>
+    </view>
+</template>
